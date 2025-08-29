@@ -17,9 +17,9 @@ public class StoreLoginPage {
     private By emailField = By.xpath("//*[@id=\"field-email\"]");
     private By passwordField = By.xpath("//*[@id=\"field-password\"]");
     private By submitLoginButton = By.xpath("//*[@id=\"submit-login\"]");
-    private By accountButton = By.className("account");
-    private By logoutButton = By.className("logout");
-    private By errorMessage = By.xpath("//*[@id=\"content\"]/section/div/ul/li");
+    private By accountButton = By.xpath("//*[@id=\"_desktop_user_info\"]/div/a[2]/span");
+    private By logoutButton = By.xpath("//*[@id=\"_desktop_user_info\"]/div/a[1]");
+    private By errorMessage = By.xpath("//*[@id=\"content\"]/section/div");
 
     public StoreLoginPage(WebDriver driver) {
         this.driver = driver;

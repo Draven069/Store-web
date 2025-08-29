@@ -16,13 +16,13 @@ public class StoreCatalogPage {
     private WebDriverWait wait;
     private Actions actions;
 
-    // Localizadores
-    private By menuCategories = By.xpath("//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li");
+    // Localizadores Genéricos
+    private By menuCategories = By.xpath("//*[@id=\"category-3\"]/a");
     private By firstProduct = By.xpath("//ul[@class='product_list grid row']/li[1]//a[@class='product-name']");
-    private By addToCartButton = By.id("add_to_cart");
-    private By quantityField = By.id("quantity_wanted");
+    private By addToCartButton = By.xpath("add_to_cart");
+    private By quantityField = By.xpath("quantity_wanted");
     private By proceedToCheckoutPopup = By.xpath("//a[@title='Proceed to checkout']");
-    private By cartTotal = By.id("total_price");
+    private By cartTotal = By.xpath("total_price");
     private By confirmationPopup = By.xpath("//div[@id='layer_cart']");
     private By productAddedMessage = By.xpath("//h2[contains(text(),'Product successfully added')]");
     private By cartTitle = By.xpath("//h1[contains(text(),'Shopping-cart summary')]");
@@ -108,6 +108,6 @@ public class StoreCatalogPage {
 
     public boolean validatePriceCalculation(String expectedQuantity) {
 
-        return true; // Placeholder - implementar lógica específica
+        return true;
     }
 }

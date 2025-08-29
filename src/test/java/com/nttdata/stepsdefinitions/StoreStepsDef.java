@@ -110,9 +110,9 @@ public class StoreStepsDef {
                 "No se muestra el mensaje de error de login");
 
         String errorMessage = storeLoginSteps.obtenerMensajeError();
-        Assertions.assertTrue(errorMessage.contains("Authentication failed") ||
-                        errorMessage.contains("Invalid") ||
-                        errorMessage.contains("incorrect"),
+        Assertions.assertTrue(errorMessage.contains("Error de autenticación.") ||
+                        errorMessage.contains("Invalido") ||
+                        errorMessage.contains("incorrecto"),
                 "El mensaje de error no es el esperado: " + errorMessage);
     }
 }
