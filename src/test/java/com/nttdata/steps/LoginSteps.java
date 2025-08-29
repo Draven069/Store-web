@@ -28,8 +28,6 @@ public class LoginSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(444));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
         wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.loginButton));
-
-
     }
 
     /**
