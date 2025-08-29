@@ -13,13 +13,13 @@ public class StoreLoginPage {
     private WebDriverWait wait;
 
     // Localizadores
-    private By signInButton = By.className("login"); //*[@id="_desktop_user_info"]/div/a/span
-    private By emailField = By.id("email");
-    private By passwordField = By.id("passwd");
-    private By submitLoginButton = By.id("SubmitLogin");
+    private By signInButton = By.xpath("//*[@id=\"_desktop_user_info\"]/div/a/span");
+    private By emailField = By.xpath("//*[@id=\"field-email\"]");
+    private By passwordField = By.xpath("//*[@id=\"field-password\"]");
+    private By submitLoginButton = By.xpath("//*[@id=\"submit-login\"]");
     private By accountButton = By.className("account");
     private By logoutButton = By.className("logout");
-    private By errorMessage = By.xpath("//div[@class='alert alert-danger']");
+    private By errorMessage = By.xpath("//*[@id=\"content\"]/section/div/ul/li");
 
     public StoreLoginPage(WebDriver driver) {
         this.driver = driver;
